@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="100dp"
+    android:paddingBottom="0dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".EditStudentActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="500dp"
+        app:cardCornerRadius="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-100dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp">
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Edit Student"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="20sp">
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+            </View>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtEdtInputName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterOverflowTextAppearance="@color/cardview_light_background"
+                app:counterTextAppearance="@color/design_default_color_primary"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@null">
+
+                <EditText
+                    android:id="@+id/txtedtname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:hint="First Name"
+                    android:inputType="text">
+
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtedtInputLast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterOverflowTextAppearance="@color/cardview_light_background"
+                app:counterTextAppearance="@color/design_default_color_primary"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@null">
+
+                <EditText
+                    android:id="@+id/txtedtlast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:hint="Last Name"
+                    android:inputType="text">
+
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp">
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <TextView
+
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="Priority :">
+                </TextView>
+                <TextView
+                    android:id="@+id/txtedtpriority"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    >
+                </TextView>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+            </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+
+            <Button
+                android:id="@+id/btnupdstudent"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Update ">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btndltstudent"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Delete">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btnmain"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Main List">
+
+            </Button>
+
+        </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+            </View>
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
